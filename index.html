@@ -53,10 +53,23 @@ family=Poppins:wght@400;600;700;800&display=swap"
         method="get"
         aria-label="Buscar notícias"
       >
-        <label>Buscar</label>
+        <label for="q" class="visually-hidden">Buscar</label>
+        <input
+          id="q"
+          name="q"
+          type="search"
+          placeholder="Buscar notícias"
+          aria-label="Pesquisar"
+        />
+        <button aria-label="Pesquisar">🔍</button>
       </form>
     </header>
-    <main></main>
+    <main id="main-content" role="main">
+      <article
+        id="noticia-principal"
+        aria-labelledby="titulo-principal"
+      ></article>
+    </main>
     <footer></footer>
   </body>
 </html>
